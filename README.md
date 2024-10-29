@@ -49,7 +49,7 @@ Download and run the package from:
 
 ```
 install_github("SMandujanoR/RAIeR")
-source("RAIeR.R")
+library(RAIeR)
 ```
 
 ### Main updates of the last version (`r Sys.Date()`) of this package:
