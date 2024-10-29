@@ -74,4 +74,3 @@ library(RAIeR)
 
   6) Material (R codes and data) from the book: https://smandujanor.github.io/Foto-trampeo-R-Vol_I
   
-# -----------------------------------------
