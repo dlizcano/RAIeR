@@ -9,9 +9,13 @@ The main objective of this package is to calculate the relative abundance index 
 - as a percentage relative to all species, and 
 - as a generalized linear model.
 
-`RAIeR` creates specific subdirectories (named by the user) to save all the results: graphs, tables, statistical tests, maps, etc. 
-
 ![](inst/figs/Diagrama.jpg)
+
+## Functions
+
+`RAIeR` creates specific subdirectories (named by the user) to save all the results: graphs, tables, statistical tests, maps, other, using different functions:
+
+![](inst/figs/f1.jpg)
 
 ## General process
 
