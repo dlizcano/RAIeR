@@ -2,16 +2,18 @@
 % Please edit documentation in R/MapCTs.R
 \name{MapCT}
 \alias{MapCT}
-\title{Function \code{MapCT}}
+\title{Map the camera traps}
 \usage{
-MapCT(map, CTs, colors, SaveFolder)
+MapCT(map, CTs, mapColor, pointColor, SaveFolder)
 }
 \arguments{
 \item{map}{Shapefile of the study area}
 
 \item{CTs}{Coordinates XY of camera traps}
 
-\item{colors}{Define the colors pallete}
+\item{mapColor}{Select 1 or -1 to define viridis color}
+
+\item{pointColor}{Define color to camera trap point}
 
 \item{SaveFolder}{Directory to save plot}
 }
@@ -23,7 +25,11 @@ Function to map the camera traps in the study area
 }
 \examples{
 \dontrun{
-MapCT(map = mapProje, CTs = habitat.data, colors = my_colors, SaveFolder = "Results")
+MapCT(map = mapProje,
+     CTs = habitat.data,
+     mapColor = 1,
+     pointColor = "black",
+     SaveFolder = "Results")
 }
 }
 \author{

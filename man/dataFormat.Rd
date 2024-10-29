@@ -2,7 +2,7 @@
 % Please edit documentation in R/dataFormat.R
 \name{dataFormat}
 \alias{dataFormat}
-\title{Function \code{dataFormat}}
+\title{Format the previous file data/Location_lys.csv}
 \usage{
 dataFormat(Location, data_Spp, data_CT, Problem)
 }

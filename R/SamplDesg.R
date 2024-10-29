@@ -1,6 +1,6 @@
-#' @title Function `SamplDesg`
+#' @title CTs field sampling designs
 #'
-#' @description Function to create a camera grid for field sampling desings
+#' @description Function to create a camera grid for field sampling designs
 #' @author "SMandujanoR"
 #'
 #' @param map Shapefile of the study area

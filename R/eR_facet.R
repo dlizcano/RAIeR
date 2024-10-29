@@ -1,4 +1,4 @@
-#' @title Function `eR_facet`
+#' @title Facet graph eR by species by years and sesons
 #'
 #' @description Function to facet graph eR by species by years and sesons
 #' @author "SMandujanoR"

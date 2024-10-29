@@ -2,7 +2,7 @@
 % Please edit documentation in R/MapEsriCTs.R
 \name{MapEsriCTs}
 \alias{MapEsriCTs}
-\title{Function \code{MapEsriCTs}}
+\title{Map Esri of the camera traps}
 \usage{
 MapEsriCTs(CTs, Proje, reProje)
 }
@@ -17,7 +17,7 @@ MapEsriCTs(CTs, Proje, reProje)
 map of the camera traps in Esri map projection in the RStudio Viewer
 }
 \description{
-Function to map the camera traps in Esri
+Function to map of the camera traps in Esri
 }
 \examples{
 \dontrun{

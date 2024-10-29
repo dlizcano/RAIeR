@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_test.R
 \name{eR_test}
 \alias{eR_test}
-\title{Function \code{eR_test}}
+\title{Statistical test}
 \usage{
 eR_test(Ymax, SaveFolder)
 }

@@ -1,4 +1,4 @@
-#' @title Function `MapEventsSpp`
+#' @title Plot XY of events
 #'
 #' @description Function to plot XY of events in camera traps for the selected species
 #' @author "SMandujanoR"

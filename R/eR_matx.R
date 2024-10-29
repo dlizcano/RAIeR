@@ -1,4 +1,4 @@
-#' @title Function `eR_matx`
+#' @title Create tables of Species-eR, and Species-Events
 #'
 #' @description Function to create tables of Species-eR, and Species-Events
 #' @author "SMandujanoR"

@@ -1,4 +1,4 @@
-#' Function MapCatgRAI
+#' Create a map of the RAI selected category
 #'
 #' @description To create a map of the RAI selected category as sex, age, other
 #' @author "SMandujanoR"

@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_CTs.R
 \name{eR_CTs}
 \alias{eR_CTs}
-\title{Function \code{eR_CTs}}
+\title{Estimate eRs per camera and species}
 \usage{
 eR_CTs(new.mat, Ymax, SaveFolder)
 }
@@ -17,7 +17,7 @@ eR_CTs(new.mat, Ymax, SaveFolder)
 Table with eRs for species in each camera, and plots
 }
 \description{
-Function to estimate eRs per camera and species, and plots
+Function to estimate eRs per camera and species, and create plots
 }
 \examples{
 \dontrun{

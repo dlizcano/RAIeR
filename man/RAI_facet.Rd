@@ -2,9 +2,9 @@
 % Please edit documentation in R/RAI_facet.R
 \name{RAI_facet}
 \alias{RAI_facet}
-\title{Function \code{RAI_facet}}
+\title{Facet graph for RAI comparison}
 \usage{
-RAI_facet(Location, species, RAIsize, map, habitats, my_colors, SaveFolder)
+RAI_facet(Location, species, RAIsize, map, mapColor, pointColor, SaveFolder)
 }
 \arguments{
 \item{Location}{Name location or study area}
@@ -15,9 +15,9 @@ RAI_facet(Location, species, RAIsize, map, habitats, my_colors, SaveFolder)
 
 \item{map}{shapefile of the study area}
 
-\item{habitats}{Character. Name of habitat o vegetation types level according with the shapefile of the study location}
+\item{mapColor}{Select 1 or -1 to define viridis color}
 
-\item{my_colors}{Name of your own palete colors}
+\item{pointColor}{Define color to camera trap point}
 
 \item{SaveFolder}{Directory to save results}
 }
@@ -31,11 +31,11 @@ To comparison RAI by habitat type during each year and season, in a selected loc
 \dontrun{
 RAI_facet(
   Location = "Cb",
-  species = "Pec_taj",
+  species = "Odo_vir",
   RAIsize = 40,
   map = mapProje,
-  habitats = "tipo_Suelo",
-  my_colors = my_colors,
+  mapColor = 1,
+  pointColor = "black",
   SaveFolder = "Venado"
 )
 }

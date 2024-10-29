@@ -1,6 +1,6 @@
-#' @title Function `eR_Gen`
+#' @title Estimate of encounter rate (eR), naive occupation, and events percent for each species
 #'
-#' @description Function to estimate of encounter rate (eR), naive occupation, and events percent for each species, and plot
+#' @description Function to estimate of encounter rate (eR), naive occupation, and events percent for each species, and create plots
 #' @author "SMandujanoR"
 #'
 #' @param new.mat Data of species

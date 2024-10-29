@@ -5,7 +5,7 @@ Authors@R:
     person("Salvador", "Mandujano", , "salvador.mandujano@inecol.mx", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-4285-0882"))
 Description: The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps.
-License: MIT + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2

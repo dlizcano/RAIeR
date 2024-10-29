@@ -2,7 +2,7 @@
 % Please edit documentation in R/RAI_CTs.R
 \name{RAI_CTs}
 \alias{RAI_CTs}
-\title{Function \code{RAI_CTs}}
+\title{RAI for camera trap}
 \usage{
 RAI_CTs(species, df, SaveFolder)
 }

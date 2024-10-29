@@ -1,4 +1,4 @@
-#' @title Function `eR_glm`
+#' @title Estimate eR according with a GLM
 #'
 #' @description Function to estimate eR according with a GLM
 #' @author "SMandujanoR"

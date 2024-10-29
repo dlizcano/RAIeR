@@ -1,5 +1,5 @@
 
-#' @title Function `date_LYS`
+#' @title Format date as "Ymd HM" to "mdY HM"
 #'
 #' @description Function to 1) format date as "Ymd HM" to "mdY HM", 2) create new columns (Location, Year, Season), and 3) save subsets of data.frames
 #' @author "SMandujanoR and C. García-Vital"
@@ -101,20 +101,18 @@ date_LYS <- function(df_Spp, Location, mdY, Jan, Feb, Mar, Apr, May, Jun, Jul, A
     # Create new columns: Location, Year, Season:
     datetxt2 <- as.Date(df_Spp$Date, tz = "UTC", "%Y-%m-%d")
     df_new <- data.frame(Year = as.numeric(format(datetxt2, format = "%Y")), month = as.numeric(format(datetxt2, format = "%m")))
-    df_Spp3 <- cbind(df_Spp, df_new)
-    df_Spp3$Season <- dplyr::recode((df_Spp3$month), "1"=Jan, "2"=Feb, "3"=Mar, "4"=Apr, "5"=May, "6"=Jun, "7"=Jul, "8"=Aug, "9"=Sep, "10"=Oct, "11"=Nov, "12"=Dec)
-    df_Spp3$Location <- Location
-    write.csv(df_Spp3, paste("data/", stringr::str_to_title(Location), "_", stringr::str_to_title("Spp_LYS"), ".csv", sep = ""))
+    df_Spp2 <- cbind(df_Spp, df_new)
+    df_Spp2$Season <- dplyr::recode((df_Spp2$month), "1"=Jan, "2"=Feb, "3"=Mar, "4"=Apr, "5"=May, "6"=Jun, "7"=Jul, "8"=Aug, "9"=Sep, "10"=Oct, "11"=Nov, "12"=Dec)
+    df_Spp2$Location <- Location
+    write.csv(df_Spp2, paste("data/", stringr::str_to_title(Location), "_", stringr::str_to_title("Spp_LYS"), ".csv", sep = ""))
 
     # Create data.frames subsets by Year and Season:
     for (i in Y.init:Y.end) {
       for (j in S.init:S.end) {
-        data_Spp1 <- subset(df_Spp3, df_Spp3$Year == i & df_Spp3$Season == j)
+        data_Spp1 <- subset(df_Spp2, df_Spp2$Year == i & df_Spp2$Season == j)
        write.csv(data_Spp1, paste("data/df/", stringr::str_to_title(Location), "_", stringr::str_to_title(i), "_", stringr::str_to_title(j), ".csv", sep = ""))
       } # j
     } # i
   } # ifelse
-
-  return(list(df_Spp2, df_Spp3))
 
 } # end function

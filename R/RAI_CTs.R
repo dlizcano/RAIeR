@@ -1,4 +1,4 @@
-#' @title Function `RAI_CTs`
+#' @title RAI for camera trap
 #'
 #' @description Function to calculate the RAI in each camera trap
 #' @author "SMandujanoR"

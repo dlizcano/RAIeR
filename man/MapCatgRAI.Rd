@@ -2,7 +2,7 @@
 % Please edit documentation in R/MapCatgRAI.R
 \name{MapCatgRAI}
 \alias{MapCatgRAI}
-\title{Function MapCatgRAI}
+\title{Create a map of the RAI selected category}
 \usage{
 MapCatgRAI(Catg, map, pointSize, colors, SaveFolder)
 }

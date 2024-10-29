@@ -1,4 +1,4 @@
-#' @title Function `eR_test`
+#' @title Statistical test
 #'
 #' @description Function to test statistical diferences through parametric ANOVA, and posteriori HSD and Tukey tests
 #' @author "SMandujanoR"

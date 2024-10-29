@@ -1,5 +1,5 @@
 
-#' @title Function `MapKernelSp`
+#' @title Create kernel utilization distribution
 #'
 #' @description To create kernel utilization distribution for selected species by season and total (year+season)
 #' @author "SMandujanoR"

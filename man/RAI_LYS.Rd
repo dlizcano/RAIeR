@@ -2,7 +2,7 @@
 % Please edit documentation in R/RAI_LYS.R
 \name{RAI_LYS}
 \alias{RAI_LYS}
-\title{Function RAI_LYS}
+\title{Graph of RAI per location}
 \usage{
 RAI_LYS(species, SaveFolder)
 }
@@ -19,7 +19,8 @@ To comparison RAI between locations, years and seasons
 }
 \examples{
 \dontrun{
-RAI_LYS(species = "Pec_taj", SaveFolder = "Pecari")
+RAI_LYS(species = "Odo_vir",
+     SaveFolder = "Venado")
 }
 
 }

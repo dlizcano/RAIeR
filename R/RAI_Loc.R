@@ -1,4 +1,4 @@
-#' Function `RAI_Loc`
+#' Graphs of RAI for Year and Season
 #'
 #' @description To calculate the RAI of the selected species by year, season and season/year, for each studied location
 #' @author "SMandujanoR"
@@ -19,9 +19,9 @@
 #' \dontrun{
 #' RAI_Loc(
 #'   Location = "Cb",
-#'   species = "Pec_taj",
+#'   species = "Odo_vir",
 #'   Ymax = 8,
-#'   SaveFolder = "Pecari"
+#'   SaveFolder = "Venado"
 #' )
 #' }
 #'

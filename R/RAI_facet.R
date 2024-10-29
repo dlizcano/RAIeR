@@ -1,4 +1,4 @@
-#' @title Function `RAI_facet`
+#' @title  Facet graph for RAI comparison
 #'
 #' @description To comparison RAI by habitat type during each year and season, in a selected location
 #' @author "SMandujanoR"
@@ -7,8 +7,8 @@
 #' @param species Select the species
 #' @param map shapefile of the study area
 #' @param RAIsize Define the point size
-#' @param habitats Character. Name of habitat o vegetation types level according with the shapefile of the study location
-#' @param my_colors Name of your own palete colors
+#' @param mapColor Select 1 or -1 to define viridis color
+#' @param pointColor Define color to camera trap point
 #' @param SaveFolder Directory to save results
 #'
 #' @importFrom stringr str_to_title
@@ -23,22 +23,23 @@
 #' \dontrun{
 #' RAI_facet(
 #'   Location = "Cb",
-#'   species = "Pec_taj",
+#'   species = "Odo_vir",
 #'   RAIsize = 40,
 #'   map = mapProje,
-#'   habitats = "tipo_Suelo",
-#'   my_colors = my_colors,
+#'   mapColor = 1,
+#'   pointColor = "black",
 #'   SaveFolder = "Venado"
 #' )
 #' }
 #'
 #' @export
 #'
-RAI_facet <- function(Location, species, RAIsize, map, habitats, my_colors, SaveFolder) {
+RAI_facet <- function(Location, species, RAIsize, map, mapColor, pointColor, SaveFolder) {
+
   # Read data:
   new.mat <- read.csv(file.path(SaveFolder, "/Data.csv"), header = T)
 
-  tipo_Suelo <- new.mat$tipo_Suelo
+  Veg <- new.mat$Veg_type
   RAI <- new.mat$RAI
   Y <- new.mat$Y
   X <- new.mat$X
@@ -61,14 +62,15 @@ RAI_facet <- function(Location, species, RAIsize, map, habitats, my_colors, Save
   dev.off()
 
   # ------------
-  # Plot 2: RAI vegetation types 1
-  miplot2 <- ggplot() +
-    ggplot2::geom_sf(data = map, color = "black") +
-    ggplot2::geom_point(data = new.mat, ggplot2::aes(X, Y, size = RAI), shape = 16, color = "dodgerblue3") +
+  # Plot: vegetation types
+  miplot2 <- ggplot2::ggplot(data = map) +
+    ggplot2::geom_sf(ggplot2::aes(fill = Veg)) +
+    ggplot2::scale_fill_viridis_d(direction = , mapColor) +
+    ggplot2::geom_point(data = new.mat, aes(X, Y, size = RAI), shape = 16, color = pointColor) +
     ggplot2::coord_sf(datum = sf::st_crs(map)) +
-    ggplot2::labs(x = "UTM-X", y = "UTM-Y", title = species) +
     ggplot2::theme_bw() +
-    ggplot2::theme(text = element_text(size = 8)) +
+    ggplot2::labs(x = "UTM-X", y = "UTM-Y", title = species) +
+    ggplot2::theme(text = element_text(size = 7)) +
     ggplot2::theme(plot.title = element_text(color = "black", size = 12, face = "bold", hjust = 0.5)) +
     ggplot2::theme(strip.text = element_text(size = 10, color = "black")) +
     ggplot2::facet_grid(Year ~ Season, labeller = ggplot2::label_both)
@@ -78,43 +80,24 @@ RAI_facet <- function(Location, species, RAIsize, map, habitats, my_colors, Save
   dev.off()
 
   # ------------
-  # Plot: vegetation types 2
-  miplot3 <- ggplot2::ggplot(data = map) +
-    # ggplot2::geom_sf(ggplot2::aes(fill = habitats)) +
-    tidyterra::geom_spatvector(ggplot2::aes(fill = tipo_Suelo)) +
-    # ggplot2::scale_fill_viridis_d() +
-    ggplot2::scale_fill_manual(values = my_colors) +
-    ggplot2::geom_point(data = new.mat, aes(X, Y, size = RAI), shape = 16, color = "black") +
+  # Plot: Kernel density
+  miplot3 <- ggplot2::ggplot(new.mat, ggplot2::aes(X, Y, size = RAI)) +
+    ggplot2::geom_density_2d_filled(bins = 5) +
+    ggplot2::geom_point() +
+    ggplot2::scale_fill_viridis_d(direction = -1) +
+    ##ggplot2::scale_fill_gradient(colours = grDevices::terrain.colors(5, rev = T)) +
     ggplot2::coord_sf(datum = sf::st_crs(map)) +
     ggplot2::theme_bw() +
     ggplot2::labs(x = "UTM-X", y = "UTM-Y", title = species) +
     ggplot2::theme(text = element_text(size = 7)) +
     ggplot2::theme(plot.title = element_text(color = "black", size = 12, face = "bold", hjust = 0.5)) +
     ggplot2::theme(strip.text = element_text(size = 10, color = "black")) +
+    ggplot2::theme(legend.position = "none") +
     ggplot2::facet_grid(Year ~ Season, labeller = ggplot2::label_both)
 
   jpeg(filename = file.path(SaveFolder, paste("/MapRAI.4_", stringr::str_to_title(species), ".jpg", sep = "")), width = 8000, height = 7000, units = "px", res = 1200)
   print(miplot3)
   dev.off()
 
-  # ------------
-  # Plot: Kerneldensity
-  miplot4 <- ggplot2::ggplot(new.mat, ggplot2::aes(X, Y, size = RAI)) +
-    ggplot2::geom_density_2d_filled(bins = 5) +
-    ggplot2::geom_point() +
-    ggplot2::scale_fill_viridis_d(direction = -1) +
-    ### ggplot2::scale_fill_gradient(colours = grDevices::terrain.colors(99, rev = T)) +
-    ggplot2::coord_sf(datum = sf::st_crs(map)) +
-    ggplot2::theme_bw() +
-    ggplot2::labs(x = "UTM-X", y = "UTM-Y", title = species) +
-    ggplot2::theme(text = element_text(size = 7)) +
-    ggplot2::theme(plot.title = element_text(color = "black", size = 12, face = "bold", hjust = 0.5)) +
-    ggplot2::theme(strip.text = element_text(size = 10, color = "black")) +
-    ggplot2::facet_grid(Year ~ Season, labeller = ggplot2::label_both)
-
-  jpeg(filename = file.path(SaveFolder, paste("/MapRAI.5_", stringr::str_to_title(species), ".jpg", sep = "")), width = 8000, height = 7000, units = "px", res = 1200)
-  print(miplot4)
-  dev.off()
-
-  return(list(miplot1, miplot2, miplot3, miplot4))
+  return(list(miplot1, miplot2, miplot3))
 } # end function

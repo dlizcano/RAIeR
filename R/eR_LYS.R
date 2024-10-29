@@ -1,4 +1,4 @@
-#' @title Function `eR_LYS`
+#' @title Plot eR for species in different locations and years
 #'
 #' @description Function to graph the eR for species in different locations and years
 #' @author "A. Zavaleta & SMandujanoR"

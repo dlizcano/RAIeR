@@ -1,3 +1,2 @@
-^RAIeR\.Rproj$
+^.*\.Rproj$
 ^\.Rproj\.user$
-^LICENSE\.md$

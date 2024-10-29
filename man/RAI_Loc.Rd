@@ -2,7 +2,7 @@
 % Please edit documentation in R/RAI_Loc.R
 \name{RAI_Loc}
 \alias{RAI_Loc}
-\title{Function \code{RAI_Loc}}
+\title{Graphs of RAI for Year and Season}
 \usage{
 RAI_Loc(Location, species, Ymax, SaveFolder)
 }
@@ -25,9 +25,9 @@ To calculate the RAI of the selected species by year, season and season/year, fo
 \dontrun{
 RAI_Loc(
   Location = "Cb",
-  species = "Pec_taj",
+  species = "Odo_vir",
   Ymax = 8,
-  SaveFolder = "Pecari"
+  SaveFolder = "Venado"
 )
 }
 

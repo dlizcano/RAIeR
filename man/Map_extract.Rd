@@ -2,7 +2,7 @@
 % Please edit documentation in R/Map_extract.R
 \name{Map_extract}
 \alias{Map_extract}
-\title{Function \code{Map_extract}}
+\title{Extract information of raster layer for each camera trap}
 \usage{
 Map_extract(map, CTs, SaveFolder)
 }
@@ -11,7 +11,7 @@ Map_extract(map, CTs, SaveFolder)
 
 \item{CTs}{Coordinates XY of camera traps}
 
-\item{SaveFolder}{Directory to save plot}
+\item{SaveFolder}{Directory to save data}
 }
 \value{
 a data.frame with new column named Habt_types
@@ -21,7 +21,9 @@ Function to extract information of each camera traps of the raster layer of the 
 }
 \examples{
 \dontrun{
-Map_extract(map = mapProje, CTs = habitat.data, SaveFolder = "Results")
+Map_extract(map = mapProje,
+            CTs = habitat.data,
+            SaveFolder = "data")
 }
 
 }

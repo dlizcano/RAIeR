@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_LYS.R
 \name{eR_LYS}
 \alias{eR_LYS}
-\title{Function \code{eR_LYS}}
+\title{Plot eR for species in different locations and years}
 \usage{
 eR_LYS(df, Factor, Name, bubSize, fontSize, SaveFolder)
 }

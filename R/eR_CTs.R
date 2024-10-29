@@ -1,6 +1,6 @@
-#' @title Function `eR_CTs`
+#' @title Estimate eRs per camera and species
 #'
-#' @description Function to estimate eRs per camera and species, and plots
+#' @description Function to estimate eRs per camera and species, and create plots
 #' @author "SMandujanoR"
 #'
 #' @param new.mat Data of species

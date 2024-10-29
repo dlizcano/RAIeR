@@ -2,7 +2,7 @@
 % Please edit documentation in R/SamplDesg.R
 \name{SamplDesg}
 \alias{SamplDesg}
-\title{Function \code{SamplDesg}}
+\title{CTs field sampling designs}
 \usage{
 SamplDesg(map, Proje, n1, n2, CTx, CTy, CTdist, legend, colors, SaveFolder)
 }
@@ -31,7 +31,7 @@ SamplDesg(map, Proje, n1, n2, CTx, CTy, CTdist, legend, colors, SaveFolder)
 Map plot and XY coordinates of each camera trap in the grid
 }
 \description{
-Function to create a camera grid for field sampling desings
+Function to create a camera grid for field sampling designs
 }
 \examples{
 \dontrun{

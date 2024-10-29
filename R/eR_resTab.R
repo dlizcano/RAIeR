@@ -1,4 +1,4 @@
-#' @title Function `eR_resTab`
+#' @title Create a final table
 #'
 #' @description Function to create a final table
 #' @author "SMandujanoR"

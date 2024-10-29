@@ -2,7 +2,7 @@
 % Please edit documentation in R/MapEsriRAI.R
 \name{MapEsriRAI}
 \alias{MapEsriRAI}
-\title{Function \code{MapEsriRAI}}
+\title{RAI Esri map}
 \usage{
 MapEsriRAI(Location, species, Proje, reProje, pointsize, SaveFolder)
 }

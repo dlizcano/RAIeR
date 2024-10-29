@@ -2,7 +2,7 @@
 % Please edit documentation in R/MapEventsSpp.R
 \name{MapEventsSpp}
 \alias{MapEventsSpp}
-\title{Function \code{MapEventsSpp}}
+\title{Plot XY of events}
 \usage{
 MapEventsSpp(new.mat, especie, parRow, parCol, pointSize, labels, SaveFolder)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/MapKernelSp.R
 \name{MapKernelSp}
 \alias{MapKernelSp}
-\title{Function \code{MapKernelSp}}
+\title{Create kernel utilization distribution}
 \usage{
 MapKernelSp(
   Location,

@@ -1,4 +1,4 @@
-#' Function RAI_LYS
+#' Graph of RAI per location
 #'
 #' @description To comparison RAI between locations, years and seasons
 #' @author "SMandujanoR"
@@ -12,7 +12,8 @@
 #'
 #' @examples
 #' \dontrun{
-#' RAI_LYS(species = "Pec_taj", SaveFolder = "Pecari")
+#' RAI_LYS(species = "Odo_vir",
+#'      SaveFolder = "Venado")
 #' }
 #'
 #' @export
@@ -29,7 +30,7 @@ RAI_LYS <- function(species, SaveFolder) {
     ggplot2::stat_summary(fun = mean, geom = "point", size = 4) +
     ggplot2::stat_summary(fun.data = mean_cl_normal, geom = "errorbar", width = 0, size = 1) +
     ggplot2::labs(x = "Locations", y = "RAI", title = "", caption = "") +
-    ggplot2::facet_grid(Year ~ Season, scales = "free_y") +
+    ggplot2::facet_grid(Year ~ Season, scales = "free_y", labeller = ggplot2::label_both) +
     ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "none")
 

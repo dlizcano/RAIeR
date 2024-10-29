@@ -2,7 +2,7 @@
 % Please edit documentation in R/dataFormatDF.R
 \name{dataFormatDF}
 \alias{dataFormatDF}
-\title{Function \code{dataFormatDF}}
+\title{Format each data.frame of location, year and season}
 \usage{
 dataFormatDF(dframe, data_CT, Problem)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_matx.R
 \name{eR_matx}
 \alias{eR_matx}
-\title{Function \code{eR_matx}}
+\title{Create tables of Species-eR, and Species-Events}
 \usage{
 eR_matx(SaveFolder)
 }

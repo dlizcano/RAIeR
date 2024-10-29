@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_Gen.R
 \name{eR_Gen}
 \alias{eR_Gen}
-\title{Function \code{eR_Gen}}
+\title{Estimate of encounter rate (eR), naive occupation, and events percent for each species}
 \usage{
 eR_Gen(new.mat, SaveFolder)
 }
@@ -15,7 +15,7 @@ eR_Gen(new.mat, SaveFolder)
 Table with estimates of encounter rate (eR), naive occupation, and events percent for each species, and plot
 }
 \description{
-Function to estimate of encounter rate (eR), naive occupation, and events percent for each species, and plot
+Function to estimate of encounter rate (eR), naive occupation, and events percent for each species, and create plots
 }
 \examples{
 \dontrun{

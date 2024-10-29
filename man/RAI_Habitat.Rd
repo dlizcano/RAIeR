@@ -2,18 +2,16 @@
 % Please edit documentation in R/RAI_Habitat.R
 \name{RAI_Habitat}
 \alias{RAI_Habitat}
-\title{Function \code{RAI_Habitat}}
+\title{Graphs of RAI by habitat types}
 \usage{
-RAI_Habitat(Location, species, Types, my_colors, SaveFolder)
+RAI_Habitat(Location, species, fontSize, SaveFolder)
 }
 \arguments{
 \item{Location}{Name location or study area}
 
 \item{species}{Select the species}
 
-\item{Types}{Names. Vegetation or habitat types}
-
-\item{my_colors}{Name of palette colors}
+\item{fontSize}{Size of habitat types names in X-axes}
 
 \item{SaveFolder}{Directory to save results}
 }
@@ -21,20 +19,15 @@ RAI_Habitat(Location, species, Types, my_colors, SaveFolder)
 Linear model and facet plot
 }
 \description{
-To comparison RAI by habitat type during each year and season, in a selected location
+To comparison RAI by habitat types during each year and season, in a selected location
 }
 \examples{
 \dontrun{
 RAI_Habitat(
   Location = "Cb",
   species = "Odo_vir",
-  Types = c(
-    "Agriculture", "River", "TDF Neo",
-    "TDF Mim", "Saltworks", "Scrub-cras"
-  ),
-  my_colors = my_colors,
-  SaveFolder = "Venado"
-)
+  fontSize = 8,
+  SaveFolder = "Venado")
 }
 
 }

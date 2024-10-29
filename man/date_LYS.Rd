@@ -2,7 +2,7 @@
 % Please edit documentation in R/date_LYS.R
 \name{date_LYS}
 \alias{date_LYS}
-\title{Function \code{date_LYS}}
+\title{Format date as "Ymd HM" to "mdY HM"}
 \usage{
 date_LYS(
   df_Spp,

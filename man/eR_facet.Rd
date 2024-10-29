@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_facet.R
 \name{eR_facet}
 \alias{eR_facet}
-\title{Function \code{eR_facet}}
+\title{Facet graph eR by species by years and sesons}
 \usage{
 eR_facet(df, bubSize, fontSize, SaveFolder)
 }

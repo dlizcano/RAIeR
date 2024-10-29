@@ -1,4 +1,4 @@
-#' @title Function `dataFormatDF`
+#' @title Format each data.frame of location, year and season
 #'
 #' @description Function specific to format each data.frame of location, year and season.
 #' @author "SMandujanoR"

@@ -2,9 +2,9 @@
 % Please edit documentation in R/MapRAI.R
 \name{MapRAI}
 \alias{MapRAI}
-\title{Function \code{RAIeR}}
+\title{map of the RAI in CTs}
 \usage{
-MapRAI(Location, species, map, pointSize, colors, SaveFolder)
+MapRAI(Location, species, map, mapColor, pointColor, SaveFolder)
 }
 \arguments{
 \item{Location}{Name location or study area}
@@ -13,9 +13,9 @@ MapRAI(Location, species, map, pointSize, colors, SaveFolder)
 
 \item{map}{shapefile of the study area}
 
-\item{pointSize}{Define the size of the circles}
+\item{mapColor}{Select 1 or -1 to define viridis color}
 
-\item{colors}{Name of your own palete colors}
+\item{pointColor}{Define color to camera trap point}
 
 \item{SaveFolder}{Directory to save results}
 }
@@ -29,12 +29,11 @@ Function to create a map of the RAI values in each camera trap for the selected 
 \dontrun{
 MapRAI(
   Location = "Cb",
-  species = "Pec_taj",
+  species = "Odo_vir",
   map = mapProje,
-  pointSize = 1,
-  colors = my_colors,
-  SaveFolder = "Pecari"
-)
+  mapColor = 1,
+  pointColor = "black",
+  SaveFolder = "Venado")
 }
 
 }

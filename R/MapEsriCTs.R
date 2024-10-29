@@ -1,6 +1,6 @@
-#' @title Function `MapEsriCTs`
+#' @title Map Esri of the camera traps
 #'
-#' @description Function to map the camera traps in Esri
+#' @description Function to map of the camera traps in Esri
 #' @author "G. Andrade-Ponce & SMandujanoR"
 #'
 #' @param CTs Coordinates XY of camera traps

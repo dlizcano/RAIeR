@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_resTab.R
 \name{eR_resTab}
 \alias{eR_resTab}
-\title{Function \code{eR_resTab}}
+\title{Create a final table}
 \usage{
 eR_resTab(new.mat, SaveFolder)
 }

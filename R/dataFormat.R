@@ -1,4 +1,4 @@
-#' @title Function `dataFormat`
+#' @title Format the previous file data/Location_lys.csv
 #'
 #' @description Function to format the previous file data/Location_lys.csv as required in this package
 #' @author "Eva López-Tello and SMandujanoR"

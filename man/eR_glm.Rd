@@ -2,7 +2,7 @@
 % Please edit documentation in R/eR_glm.R
 \name{eR_glm}
 \alias{eR_glm}
-\title{Function \code{eR_glm}}
+\title{Estimate eR according with a GLM}
 \usage{
 eR_glm(new.mat, family, SaveFolder)
 }

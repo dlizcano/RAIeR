@@ -1,4 +1,4 @@
-#' @title Function `MapEsriRAI`
+#' @title RAI Esri map
 #'
 #' @description To project RAI of the selected species on Esri.WorldImagery
 #' @author "SMandujanoR"
