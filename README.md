@@ -52,7 +52,7 @@ install_github("SMandujanoR/RAIeR")
 library(RAIeR)
 ```
 
-## Main updates of the last version (`r Sys.Date()`) of this package:
+## Main updates of the last version of this package:
 
   1) Functions to format the `data.frame` obtained with `camtrapR`, `Wild.ID`, or `CameraBase`.
 
