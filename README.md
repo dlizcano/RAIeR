@@ -57,10 +57,6 @@ Preferably, you should create a project in RStudio, and include two folders name
 
 ![](inst/figs/RStudio.jpg)
 
-Preferably, you should create a project in RStudio, and include two folders named "data" and "shapes." 
-
-![](inst/figs/RStudio.jpg)
-
 The first folder includes the three files with the species "data.frame" (usually generated from the `camtrapR` package or programs such as `WildID`, `Camelot`, `CameraBase` or others). In this example named "CT_habitat.csv", "CT_operativity" and "CT_Spp.csv". In the second folder include the shapefile and raster files of the study area. 
 
 Also, in the main folder, it is necessary to include the R Script (named "Script_Master2.R" in this example), which contains the lines needed to execute all the functions required in a project. These lines can be copied directly from the HTML vignettes 1 to 7 described here.
