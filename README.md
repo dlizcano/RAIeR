@@ -2,11 +2,7 @@
 
 ## Objectives of this package:
 
-The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on three models: 
-
-- grouping all data, 
-- by camera trap, and 
-- as a generalized linear model.
+The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on three models: grouping all data, by camera trap, and as a generalized linear model.
 
 ![](inst/figs/Diagrama.jpg)
 
@@ -79,3 +75,8 @@ In the first folder include the three files with the species "data.frame" (usual
 
 Also, in the main folder, it is necessary to include the R Script (named "Script_Master2.R" in this example), which contains the lines needed to execute all the functions required in a project. These lines can be copied directly from the HTML vignettes 1 to 7 described here.
 
+## Suggestion to run `RAI_eR`
+
+In the folder called "inst" there is a file containing the complete script to execute all the functions of this package. I suggest you download it and include it in the project folder in RStudio.
+
+![](inst/figs/RStudio.jpg)
