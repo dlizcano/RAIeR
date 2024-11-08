@@ -2,11 +2,7 @@
 
 ## Objectives of this package:
 
-The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on three models: 
-
-- grouping all data, 
-- by camera trap, and 
-- as a generalized linear model.
+The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on three models: grouping all data, by camera trap, and as a generalized linear model.
 
 ![](inst/figs/Diagrama.jpg)
 
@@ -73,9 +69,14 @@ library(RAIeR)
 
 It is suggested that you create an RStudio folder from the start (see https://www.youtube.com/watch?v=KD6X6tC6QLE&t=42s). In this folder (named "RAIeR_Master" in this example), you should have two folders named "data" and "shapes." 
 
-
+![](inst/figs/RStudio.jpg)
 
 In the first folder include the three files with the species "data.frame" (usually generated from the `camtrapR` package or programs such as `WildID`, `Camelot`, `CameraBase` or others). In this example named "CT_habitat.csv", "CT_operativity" and "CT_Spp.csv". In the second folder include the shapefile and raster files of the study area. 
 
 Also, in the main folder, it is necessary to include the R Script (named "Script_Master2.R" in this example), which contains the lines needed to execute all the functions required in a project. These lines can be copied directly from the HTML vignettes 1 to 7 described here.
 
+## Suggestion to run `RAI_eR`
+
+In the folder called "inst" there is a file containing the complete script to execute all the functions of this package. I suggest you download it and include it in the project folder in RStudio.
+
+![](inst/figs/fig2.jpg)
