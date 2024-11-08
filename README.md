@@ -2,11 +2,10 @@
 
 ## Objectives of this package:
 
-The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on four models: 
+The main objective of this package is to calculate the relative abundance index (RAI) and the encounter rate (eR) with data obtained from camera traps. For this purpose, the package generates RAIeR based on three models: 
 
 - grouping all data, 
-- by camera trap, 
-- as a percentage relative to all species, and 
+- by camera trap, and 
 - as a generalized linear model.
 
 ![](inst/figs/Diagrama.jpg)
@@ -56,14 +55,6 @@ install_github("SMandujanoR/RAIeR")
 library(RAIeR)
 ```
 
-## Main updates of the last version of this package:
-
-  1) Functions to format the `data.frame` obtained with `camtrapR`, `Wild.ID`, or `CameraBase`.
-
-  2) Transition to `terra` and `sf` packages instead of `raster` and `rgdal`.
-
-  3) Specific functions to analyze the RAI for one selected species and functions to calculate the eR for several species.
-
 ## Consult the following previously to use the `RAIeR` package:
 
   1) Mandujano, S. 2019. Índice de abundancia relativa: RAI. Pp. 131-144, in: S. Mandujano & L. A. Pérez-Solano (eds.), Foto-trampeo en R: Organización y análisis de datos, Volumen I. Instituto de Ecología A. C., Xalapa, Ver., México. 243pp. <https://www.researchgate.net/publication/340413631_MANDUJANO_S_2019_Indice_de_abundancia_relativa_RAI>
@@ -77,4 +68,14 @@ library(RAIeR)
   5) PDF of the book at: https://www.researchgate.net/publication/348922971_Fototrampeo_en_R_Organizacion_y_Analisis_de_Datos_Volumen_I
 
   6) Material (R codes and data) from the book: https://smandujanor.github.io/Foto-trampeo-R-Vol_I
-  
+
+  ## Create RStudio project
+
+It is suggested that you create an RStudio folder from the start (see https://www.youtube.com/watch?v=KD6X6tC6QLE&t=42s). In this folder (named "RAIeR_Master" in this example), you should have two folders named "data" and "shapes." 
+
+
+
+In the first folder include the three files with the species "data.frame" (usually generated from the `camtrapR` package or programs such as `WildID`, `Camelot`, `CameraBase` or others). In this example named "CT_habitat.csv", "CT_operativity" and "CT_Spp.csv". In the second folder include the shapefile and raster files of the study area. 
+
+Also, in the main folder, it is necessary to include the R Script (named "Script_Master2.R" in this example), which contains the lines needed to execute all the functions required in a project. These lines can be copied directly from the HTML vignettes 1 to 7 described here.
+
