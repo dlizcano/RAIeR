@@ -79,4 +79,4 @@ Also, in the main folder, it is necessary to include the R Script (named "Script
 
 In the folder called "inst" there is a file containing the complete script to execute all the functions of this package. I suggest you download it and include it in the project folder in RStudio.
 
-![](inst/figs/RStudio.jpg)
+![](inst/figs/fig2.jpg)
