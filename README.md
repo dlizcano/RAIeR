@@ -77,6 +77,6 @@ Also, in the main folder, it is necessary to include the R Script (named "Script
 
 ## Suggestion to run `RAI_eR`
 
-In the folder called "inst" there is a file containing the complete script to execute all the functions of this package. I suggest you download it and include it in the project folder in RStudio.
+In the folder called "inst" there is a file containing the complete script to execute all the functions of this package. I suggest you download it and include it in the project folder in RStudio. The The file is named as `Script_Master.R`: 
 
 ![](inst/figs/fig2.jpg)
