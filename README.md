@@ -73,7 +73,7 @@ library(RAIeR)
 
 It is suggested that you create an RStudio folder from the start (see https://www.youtube.com/watch?v=KD6X6tC6QLE&t=42s). In this folder (named "RAIeR_Master" in this example), you should have two folders named "data" and "shapes." 
 
-
+![](inst/figs/RStudio.jpg)
 
 In the first folder include the three files with the species "data.frame" (usually generated from the `camtrapR` package or programs such as `WildID`, `Camelot`, `CameraBase` or others). In this example named "CT_habitat.csv", "CT_operativity" and "CT_Spp.csv". In the second folder include the shapefile and raster files of the study area. 
 
