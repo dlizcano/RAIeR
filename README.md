@@ -61,7 +61,7 @@ The first folder includes the three files with the species "data.frame" (usually
 
 ## Suggestion to run `RAI_eR`
 
-In the folder  "inst" is a file containing the complete script to execute all the functions. I suggest you download it and include it in the project folder in RStudio. The The file is named as `Script_Master.R`: 
+In the folder  "inst" is a file containing the complete script `Script_Master.R` to execute all the functions. Download it from https://github.com/SMandujanoR/RAIeR/blob/main/inst/Script_Master.R: 
 
 ![](inst/figs/fig2.jpg)
 
