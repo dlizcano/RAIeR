@@ -1,6 +1,6 @@
 # Package `RAIeR`
 
-![](inst/figs/LogoRAIeR.jpg)
+![](inst/figs/Logo_RAIeR.jpg)
 
 ## Objectives of this package:
 
