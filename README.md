@@ -1,8 +1,7 @@
 # Package `RAIeR`
 
-```{r, echo=FALSE, out.width="50%"}
-knitr::include_graphics("inst/figs/Logo_RAIeR.jpg")
-```
+![]("inst/figs/Logo_RAIeR.jpg")
+
 
 ## Objectives of this package:
 
