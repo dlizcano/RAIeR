@@ -1,8 +1,6 @@
 # Package `RAIeR`
 
-\includegraphics[scale=1.5]{inst/figs/Logo_RAIeR.jpg}
-
-![25%](inst/figs/Logo_RAIeR.jpg)
+![](inst/figs/Logo_RAIeR.jpg){width=50%}
 
 ## Objectives of this package:
 
