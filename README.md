@@ -1,6 +1,6 @@
 # Package `RAIeR`
 
-![A nice image.](inst/figs/Logo_RAIeR.jpg){width=50%}
+![](inst/figs/Logo_RAIeR.jpg){width=10%}
 
 ## Objectives of this package:
 
