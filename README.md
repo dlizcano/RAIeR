@@ -1,6 +1,6 @@
 # Package `RAIeR`
 
-![](inst/figs/Logo_RAIeR.jpg)
+![50%](inst/figs/Logo_RAIeR.jpg)
 
 ## Objectives of this package:
 
