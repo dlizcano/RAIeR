@@ -1,6 +1,6 @@
 # Package `RAIeR`
 
-```{r, echo=FALSE, out.width="50%", fig.cap="A nice image."}
+```{r, echo=FALSE, out.width="50%"}
 knitr::include_graphics("inst/figs/Logo_RAIeR.jpg")
 ```
 
