@@ -1,6 +1,8 @@
 # Package `RAIeR`
 
-![](inst/figs/Logo_RAIeR.jpg){width=10%}
+```{r, echo=FALSE, out.width="50%", fig.cap="A nice image."}
+knitr::include_graphics("inst/figs/Logo_RAIeR.jpg")
+```
 
 ## Objectives of this package:
 
