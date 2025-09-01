@@ -46,21 +46,21 @@ View(CTs_habitat2)
 
 # -----
 # To read the raster and shapefile of the study area in shapefile format:
-(fpath <- system.file("extdata", "veg.shp", package="RAIeR"))
+(fpath1 <- system.file("extdata", "veg.shp", package="RAIeR"))
 # [1] "/Users/smandujanor/Library/R/x86_64/4.4/library/RAIeR/extdata/veg.shp"
 
 # Copy path and read with the terra package:
-map <- terra::vect("/Users/smandujanor/Library/R/x86_64/4.4/library/RAIeR/extdata/veg.shp")
+map <- terra::vect(fpath1)
 
 # Map:
 terra::plot(map)
 
 # Layer in raster format:
-(fpath <- system.file("extdata", "CBVegRaster.tif", package="RAIeR"))
+(fpath2 <- system.file("extdata", "CBVegRaster.tif", package="RAIeR"))
 # [1] "/Users/smandujanor/Library/R/x86_64/4.4/library/RAIeR/extdata/CBVegRaster.tif"
 
 # Copy path and read with terra package:
-map2 <- terra::rast("/Users/smandujanor/Library/R/x86_64/4.4/library/RAIeR/extdata/CBVegRaster.tif")
+map2 <- terra::rast(fpath2)
 
 # Map:
 terra::plot(map2)
@@ -191,17 +191,17 @@ proje2 <- sp::CRS("+proj=utm +zone=14 +datum=WGS84 +towgs84=0,0,0")
 mapProje <- project(map, proje1)
 ###mapProjeX <- project(map, crs("EPSG:32614"))
 
-# Self-selected color palette for vegetation types in the study area: 
+# Self-selected color palette for vegetation types in the study area:
 
 my_colors <- c("gold",            # Irrigated agriculture
-               "deepskyblue2",    # Permanent river 
+               "deepskyblue2",    # Permanent river
                "darkolivegreen4", # TDF Neo
                "darkolivegreen1", # TDF Mim
                "azure3",          # Saltworks
                "darkorange2"      # Scrub-cras
 )
 
-# ----------- 
+# -----------
 # OPTIONAL. Use the following function to extract information on vegetation types in each camera trap using the raster layer of the study location, and integrate it as a new column/covariate in the data.frame "habitat.data":
 
 Map_extract(map = map2,
@@ -245,7 +245,7 @@ SamplDesg(map = mapProje,
           CTx = 691000,
           CTy = 2007500,
           CTdist = 500,
-          legend = "bottom", 
+          legend = "bottom",
           colors = my_colors, SaveFolder = "Results")
 
 ################################################
@@ -343,7 +343,7 @@ RAI_Habitat(Location = "Cb",
 
 # ---------
 # Function to estimate RAIs between locations, years and periods:
-  
+
   RAI_LYS(species = "Uro_cin",
           SaveFolder = "Zorra")
 
@@ -360,7 +360,7 @@ View(datos)
 # -------
 # Function to calculate the overall eR, in relative percentage, and naive occupancy:
 
-eR_Gen(data, 
+eR_Gen(data,
        SaveFolder = "Results")
 
 # ----------------
@@ -385,7 +385,7 @@ eR_CTs(data,
 # ---------
 # Function for statistical tests (Anova, Tukey's post hoc tests and HSD) of the eR between species:
 
-eR_test(Ymax = 15, 
+eR_test(Ymax = 15,
         SaveFolder = "Results")
 
 # ---------
@@ -403,7 +403,7 @@ eR_resTab(data, SaveFolder = "Results")
 # ---------
 # Function to generate the matrix of the eR and Events by species and camera, useful for diversity analysis in other packages:
 
-eR_matx(SaveFolder = "Results") 
+eR_matx(SaveFolder = "Results")
 
 # ---------
 # Function to plot the eR for the species in different locations and years:
@@ -432,10 +432,10 @@ eR_LYS(df = datos,
 # ---------
 # Function to plot the eR facets by year and season:
 
-eR_facet(df = datos, 
-         bubSize = 7, 
-         fontSize = 6, 
-         SaveFolder = "Results") 
+eR_facet(df = datos,
+         bubSize = 7,
+         fontSize = 6,
+         SaveFolder = "Results")
 
-################################## 
+##################################
 # END SCRIPT
